@@ -93,4 +93,9 @@ app.get('/slippage', async (req, res) => {
   res.json(slippage);
 });
 
+app.get('/', (req, res) => {
+  res.send('✅ Currency Exchange Backend is running successfully!');
+});
+
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
